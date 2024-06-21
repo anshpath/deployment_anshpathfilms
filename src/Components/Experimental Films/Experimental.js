@@ -1,9 +1,32 @@
+// Experimental.js
 import React from 'react';
+import VideoCarousel from './VideoCarousel';
 
 const Experimental = () => {
+  
+  const items = [
+    {
+      video: '/Boston SB.mp4',
+      title: '"Old Money"',
+      description: 'Kodak Vision 3 Color Negative Film 7213'
+    },
+    {
+      video: '/Haiku Film.mp4',
+      title: '"A House Haiku"',
+      description: 'Kodak Vision 3 Color Negative Film 7207'
+    },
+    {
+      video: '/Hike Film.mp4',
+      title: '"The Color of Peaks"',
+      description: 'Kodak Tri-X Black and White Reversal Film 7266, Kodak Vision 3 Color Negative Film 7203'
+    }
+  ];
+
   return (
-    <div>
-      Experimental Films Component
+    <div className="experimental">
+      <h1 className = 'page-heading'>Experimental Films</h1>
+      <h3>The following films are shot on a Bolex H16 Rex5 16mm Film Camera</h3>
+      <VideoCarousel items={items} />
     </div>
   );
 };

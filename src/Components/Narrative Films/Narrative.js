@@ -9,7 +9,7 @@ function Narrative() {
   return (
     <Container fluid className="project-section">
       <Container>
-        <h1 className="narrative-heading">Narrative Films</h1>
+        <h1 className="page-heading">Narrative Films</h1>
         <Row>
           {movieData.map(movie => (
             <Col key={movie.fileName} md={12} className="narrative-card">

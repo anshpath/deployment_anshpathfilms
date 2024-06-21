@@ -1,0 +1,112 @@
+/* Navbar styles */
+.navbar {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-family: 'BreeSerif', sans-serif; /* Apply custom font to navbar */
+}
+
+/* Home page navbar styles */
+.navbar-home {
+  background-color: transparent !important;
+  color: #EBE9E9 !important;
+}
+
+.navbar-home .brand {
+  color: #EBE9E9 !important;
+}
+
+.navbar-home .brand-text{
+  color: #EBE9E9 !important;
+}
+
+.navbar-home .navbar-nav .nav-link {
+  color: #EBE9E9 !important;
+}
+.navbar-home .navbar-nav .nav-link:hover {
+  color: #ff6201 !important;
+}
+/*#EBE9E9 platinum */
+
+
+
+/* Other page navbar styles */
+.navbar-other {
+  background-color: #EBE9E9 !important;
+  color: black;
+  /* box-shadow: 0px 10px 10px black; */
+}
+.navbar-light .navbar-nav .nav-link:not(.brand){
+  color: black;
+}
+
+/* Adjusting hover effect for all nav-links except brand */
+.navbar-light .navbar-nav .nav-link:not(.brand):hover {
+  color: #FF6201; /* Change text color on hover */
+}
+
+/* Active link and hover effect for all nav-links */
+.navbar-light .navbar-nav .active > .nav-link:not([href="/AnshFilmResume.pdf"]),
+.navbar-light .navbar-nav .nav-link.active:not([href="/AnshFilmResume.pdf"]),
+.navbar-light .navbar-nav .nav-link.show:not([href="/AnshFilmResume.pdf"]),
+.navbar-light .navbar-nav .show > .nav-link:not([href="/AnshFilmResume.pdf"]) {
+  text-decoration: underline;
+  text-decoration-line: line-through;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #FF6201;
+}
+
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Fixed top navbar styles */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+/* Transparent background */
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* White background */
+.bg-white {
+  background-color: #EBE9E9 !important;
+}
+
+/* Specific styles to ensure the resume link does not change color */
+.navbar-nav .nav-link[href="/AnshFilmResume.pdf"] {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link[href="/AnshFilmResume.pdf"]:hover {
+  color: #FF6201 !important; /* Change text color on hover */
+  text-decoration: underline;
+  text-decoration-color:#FF6201; /* Underline on hover */
+}
+
+.navbar-nav .nav-link[href="/AnshFilmResume.pdf"]:focus {
+  color: inherit !important;
+}
+
+.navbar-nav .nav-link[href="/AnshFilmResume.pdf"]:active {
+  color: inherit !important;
+}
+
+.navbar-nav .nav-link[href="/AnshFilmResume.pdf"]:visited {
+  color: inherit !important;
+}
+
+/* Hover effect for Ansh Pathapadu on non-homepage */
+.navbar-other .brand:hover .brand-text {
+  color: #FF6201; /* Change text color on hover */
+}
+
+/* Hover effect for Projects and About */
+.navbar-light .nav-link:hover {
+  color: #FF6201; /* Change text color on hover */
+}

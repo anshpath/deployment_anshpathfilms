@@ -1,0 +1,32 @@
+.software-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows icons to wrap to the next line */
+  }
+  
+  .icon-circle {
+    text-align: center;
+    margin: 15px; /* Adjust spacing between icons */
+  }
+  
+  .icon {
+    width: auto; /* Let the width adjust based on the height */
+    height: 100px; /* Adjust the size of the icon */
+    border-radius: 50%; /* Ensures it's circular */
+    margin-bottom: 10px;
+  }
+  .email-box {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ff6201;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .email-address {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }

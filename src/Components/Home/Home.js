@@ -1,17 +1,13 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-//import Type from "./Type";
+import './Home.css';
+import bgVideo from './Movie Scrabble.mp4';
 
 function Home() {
+  
   return (
-    <Container>
-      <h1>
-        Ansh Pathapadu Films
-      </h1>
-    </Container>
+    <div className="homepage">
+      <video src={bgVideo} autoPlay loop muted className="video-bg" />
+    </div>
   );
 }
 

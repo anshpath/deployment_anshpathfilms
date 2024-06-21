@@ -1,38 +1,67 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Type from "./Type";
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import { NavLink, useLocation } from "react-router-dom"; // Import NavLink from react-router-dom
+import './NavBar.css';  // Import the CSS file
+import Type from './Type';
 
 function NavBar() {
+  const [expand, updateExpanded] = useState(false);
+  const location = useLocation();
+
+  const isHomePage = location.pathname === '/'; // Check if on homepage
+
   return (
-<Navbar fixed = "top" expand="lg" className="bg-body-tertiary">
+    <Navbar
+      expanded={expand}
+      fixed="top"
+      expand="md"
+      className={isHomePage ? "navbar-home" : "navbar-other"}
+    >
       <Container>
-        <Navbar.Brand href="/">
-          <h1>
-            Ansh Pathapadu
-          </h1>
-          <div>
-            <Type />
-          </div>
+        <Navbar.Brand as={NavLink} to="/" className="brand">
+          <h1 className="brand-text">Ansh Pathapadu</h1>
+          {isHomePage && <h2 className = "brand-text"><Type /></h2>}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-          <NavDropdown title="Projects" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/narrativefilms">Narrative Films</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/experimentalfilms">
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(!expand);
+          }}
+        />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Item>
+              <Nav.Link as={NavLink} to="/narrativefilms" onClick={() => updateExpanded(false)}>
+                Narrative Films
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={NavLink} to="/experimentalfilms" onClick={() => updateExpanded(false)}>
                 Experimental Films
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="/resume">Resume</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={NavLink} to="/about" onClick={() => updateExpanded(false)}>
+                About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link 
+                href="/AnshFilmResume.pdf" 
+                target="_blank" 
+                onClick={() => updateExpanded(false)}
+                className="resume-link"
+              >
+                Resume
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
+
 export default NavBar;

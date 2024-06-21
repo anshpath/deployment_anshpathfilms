@@ -1,0 +1,65 @@
+.video-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border: 10px solid #ff6201; */
+    box-shadow: 0 4px 10px 5px #FF6201;
+    border-radius: 10px;
+  }
+  
+  .video-carousel video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  .carousel-control:focus {
+    outline: none;
+  }
+  
+  .carousel-control img {
+    width: 40px; /* Adjust width of the arrow images */
+    height: auto; /* Automatically adjust height */
+  }
+  
+  .video-text {
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .video-text h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .video-text p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .rotate-arrow {
+    transform: scaleX(-1); /* Flip the arrow horizontally */
+  }
+  
