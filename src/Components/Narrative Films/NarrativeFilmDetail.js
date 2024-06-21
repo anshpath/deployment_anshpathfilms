@@ -17,14 +17,31 @@ function NarrativeFilmDetail() {
     return <div>Movie not found for {filmName}</div>;
   }
 
-  // Function to convert YouTube URL to embed URL
-  const getYouTubeEmbedUrl = (url) => {
-    const regex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
-    const match = url.match(regex);
-    return match ? `https://www.youtube.com/embed/${match[1]}` : null;
+  // Function to extract YouTube video ID from URL
+  const getYouTubeVideoId = (url) => {
+    // Example URL formats to handle:
+    // - https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    // - https://youtu.be/dQw4w9WgXcQ
+    // Extract video ID from URL
+    let videoId = null;
+    if (url.includes('youtube.com')) {
+      videoId = url.split('v=')[1];
+      const ampersandPosition = videoId.indexOf('&');
+      if (ampersandPosition !== -1) {
+        videoId = videoId.substring(0, ampersandPosition);
+      }
+    } else if (url.includes('youtu.be/')) {
+      videoId = url.split('youtu.be/')[1];
+      const slashPosition = videoId.indexOf('/');
+      if (slashPosition !== -1) {
+        videoId = videoId.substring(0, slashPosition);
+      }
+    }
+    return videoId;
   };
 
-  const videoSrc = getYouTubeEmbedUrl(movie.link);
+  const videoId = getYouTubeVideoId(movie.link);
+  const videoSrc = videoId ? `https://www.youtube.com/embed/${videoId}` : null;
 
   return (
     <Container>
@@ -40,14 +57,14 @@ function NarrativeFilmDetail() {
           <p>Invalid video URL</p>
         )}
       </div>
-      <h1 className = 'page-heading'>{movie.title} ({movie.releaseDate})</h1>
+      <h1 className="page-heading">{movie.title} ({movie.releaseDate})</h1>
       <Row>
-        <h1 class = 'cred'>
+        <h1 className="cred">
           Directed By: {movie.director}
         </h1>
       </Row>
       <Row>
-        <p class = 'desc'>
+        <p className="desc">
           {movie.description}
         </p>
       </Row>
