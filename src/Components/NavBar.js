@@ -24,7 +24,7 @@ function NavBar() {
           <h1 className="brand-text">Ansh Pathapadu</h1>
           {isHomePage && <h2 className = "brand-text"><Type /></h2>}
         </Navbar.Brand>
-        <Navbar.Toggle
+        <Navbar.Toggle 
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(!expand);
