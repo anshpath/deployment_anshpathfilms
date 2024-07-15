@@ -8,6 +8,7 @@ function Home() {
     <div className="homepage">
       <video src={bgVideo} autoPlay loop muted className="video-bg" />
     </div>
+    //test
   );
 }
 
