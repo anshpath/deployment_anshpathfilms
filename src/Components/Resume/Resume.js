@@ -7,7 +7,7 @@ const Resume = () => {
     // </div>
     <>
       <h1>Resume</h1><div>
-        <iframe src = './AnshFilmResume.pdf' width= '100%' height= '500px' />
+        <iframe src = './AnshFilmResume (2) (1).pdf' width= '100%' height= '500px' />
       </div></>
     
   );
