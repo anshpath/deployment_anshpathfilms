@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col, Image } from "react-bootstrap";
 import anshImage from '../../Images/5367412124-headshot.jpg';
 import './About.css'; // Import the CSS file
@@ -9,6 +9,10 @@ import finalDraftIcon from './finalDraft.png';
 import finalCutProIcon from './finalCutPro.png';
 
 const About = () => {
+  useEffect(() => {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   // Function to open email client in a new tab
   const handleEmailClick = () => {
     window.open('https://mail.google.com/mail/?view=cm&fs=1&to=anshpath@gmail.com', '_blank');

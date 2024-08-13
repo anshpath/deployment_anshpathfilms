@@ -34,12 +34,12 @@ function NavBar() {
           <Nav className="ms-auto">
             <Nav.Item>
               <Nav.Link as={NavLink} to="/narrativefilms" onClick={() => updateExpanded(false)}>
-                Narrative Films
+                Narrative
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={NavLink} to="/experimentalfilms" onClick={() => updateExpanded(false)}>
-                Experimental Films
+                Experimental
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>

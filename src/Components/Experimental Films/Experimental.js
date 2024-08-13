@@ -1,10 +1,12 @@
 // Experimental.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import VideoCarousel from './VideoCarousel';
 import './VideoCarousel.css';
-
 const Experimental = () => {
-  
+  useEffect(() => {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   const items = [
     {
       video: '/Boston SB.mp4',

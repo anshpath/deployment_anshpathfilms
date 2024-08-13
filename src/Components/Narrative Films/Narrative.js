@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NarrativeCard from "./NarrativeCard";
 import { Container, Row, Col } from "react-bootstrap";
 import movieData from './movieData';
@@ -6,6 +6,10 @@ import movieData from './movieData';
 import { Link } from "react-router-dom";
 
 function Narrative() {
+  useEffect(() => {
+    // Scroll to the top of the page when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Container fluid className="project-section">
       <Container>
@@ -16,6 +20,7 @@ function Narrative() {
               <Link to={`/narrativefilms/${movie.fileName}`}>
               <NarrativeCard
                 img={movie.img}
+                title={movie.title}  // Pass the title to be displayed in the overlay
                 link={`/narrativefilms/${movie.fileName}`}
               />
               </Link>
