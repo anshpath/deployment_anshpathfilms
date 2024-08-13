@@ -1,7 +1,7 @@
 /* style.css or App.css */
 @import './Components/Experimental Films/VideoCarousel.css';
 body {
-  background-color: #EBE9E9; /* Set default background color for all pages */
+  background-color: var(--pagecolor); /* Set default background color for all pages */
 }
 
 body.home-page {
@@ -9,7 +9,7 @@ body.home-page {
 }
 
 body.no-home-page {
-  background-color: #EBE9E9;
+  background-color: var(--pagecolor);
   /* background-color: #ffcf99; White background for all other pages */
 }
 body.no-home-page {

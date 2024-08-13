@@ -5,7 +5,7 @@
     margin: 0 auto;
     overflow: hidden;
     /* border: 10px solid #ff6201; */
-    box-shadow: 0 4px 10px 5px #FF6201;
+    box-shadow: 0 4px 10px 5px var(--anshorange);
     border-radius: 10px;
   }
   

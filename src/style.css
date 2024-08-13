@@ -1,3 +1,8 @@
+:root{
+  --anshorange: #ff6201;
+  --pagecolor: #EBE9E9;
+  --textcolor: black;
+}
 @font-face {
   font-family: 'BreeSerif';
   src: url('../public/BreeSerif-Regular.ttf') format('truetype');
@@ -9,14 +14,18 @@
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-family: 'BreeSerif', sans-serif;
+  color: var(--textcolor);
 }
 
 .page-heading {
-  color: #FF6201; /* Set color for h1 elements */
+  color: var(--anshorange); /* Set color for h1 elements */
 }
-
+.other-text{
+  color: var(--textcolor);
+}
 p {
   font-family: 'BreeSerif', sans-serif; /* Apply custom font to paragraphs */
+  color: var(--textcolor);
 }
 
 .footer {
@@ -24,7 +33,10 @@ p {
   text-align: center;
   padding: 10px 0;
   color: #333;
-  box-shadow: 4px -2px 10px #ff6201; /* Optional: Adds a shadow at the bottom */
+  box-shadow: 4px -2px 10px var(--anshorange); /* Optional: Adds a shadow at the bottom */
+}
+.footer-text{
+  color: var(--textcolor);
 }
 
 .footer-home {
@@ -32,12 +44,12 @@ p {
   bottom: 0;
   background-color: transparent;
   box-shadow: 4px -2px 10px transparent; /* Transparent background for the homepage */
-  color: #EBE9E9; /* White text color for the homepage */
+  color: var(--pagecolor); /* White text color for the homepage */
 }
 
 .footer-other {
-  background-color: #EBE9E9; /* White background for other pages */
-  color: black; /* Default text color for other pages */
+  background-color: var(--pagecolor); /* White background for other pages */
+  color: var(--textcolor); /* Default text color for other pages */
 }
 
 /* Narrative card styles */
@@ -53,7 +65,7 @@ p {
 .narrative-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px #FF6201  !important;
+  box-shadow: 0 4px 4px 5px var(--anshorange)  !important;
 }
 
 .card-img-top {
@@ -62,7 +74,7 @@ p {
 }
 
 .btn-primary {
-  color: #ff6201 !important;
+  color: var(--anshorange)!important;
   background-color: transparent !important;
   border: none !important;
 }
@@ -107,9 +119,11 @@ p {
 .cred {
   font-size: 24px; /* Adjust font size for p1 */
   text-align: left;
+  color: var(--textcolor);
 }
 
 .desc {
   font-size: 20px; /* Adjust font size for p1 */
   text-align: left;
+  color: var(--textcolor);
 }

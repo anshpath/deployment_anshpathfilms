@@ -19,7 +19,7 @@
   .email-box {
     cursor: pointer;
     padding: 10px;
-    border: 1px solid #ff6201;
+    border: 1px solid var(--anshorange);
     border-radius: 5px;
     width: fit-content;
     margin: auto;

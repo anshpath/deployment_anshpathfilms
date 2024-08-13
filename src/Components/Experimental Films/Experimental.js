@@ -1,6 +1,7 @@
 // Experimental.js
 import React from 'react';
 import VideoCarousel from './VideoCarousel';
+import './VideoCarousel.css';
 
 const Experimental = () => {
   
@@ -25,7 +26,7 @@ const Experimental = () => {
   return (
     <div className="experimental">
       <h1 className = 'page-heading'>Experimental Films</h1>
-      <h3>The following films are shot on a Bolex H16 Rex5 16mm Film Camera</h3>
+      <h3 className = 'other-text'>The following films are shot on a Bolex H16 Rex5 16mm Film Camera</h3>
       <VideoCarousel items={items} />
     </div>
   );

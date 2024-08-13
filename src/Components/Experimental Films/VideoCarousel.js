@@ -32,7 +32,7 @@ const VideoCarousel = ({ items }) => {
         </button>
       </div>
       <div className="video-text">
-        <h2>{items[currentVideoIndex].title}</h2>
+        <h2 className = 'other-text'>{items[currentVideoIndex].title}</h2>
         <p>{items[currentVideoIndex].description}</p>
       </div>
     </div>
