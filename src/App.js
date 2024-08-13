@@ -25,6 +25,9 @@ function App() {
 
   return (
     <Router>
+      <head>
+        <title>AnshPathFilms</title>
+      </head>
       <ScrollControl load={load}>
         <NavBar />
         <div className="main-content">

@@ -5,11 +5,11 @@
 }
 
 .navbar-home .brand {
-  color: #EBE9E9 !important;
+  color: var(--pagecolor) !important;
 }
 
 .navbar-home .navbar-nav .nav-link {
-  color: #EBE9E9 !important;
+  color: var(--pagecolor)  !important;
 }
 .navbar-home .navbar-nav .nav-link:hover {
   color: var(--anshorange) !important;
@@ -18,13 +18,20 @@
 /* Other page navbar styles */
 .navbar-other {
   background-color: var(--pagecolor)!important;
-  box-shadow: #EBE9E9 !important;
+  box-shadow: var(--pagecolor)  !important;
+}
+.navbar-home{
+  background-color: transparent;
 }
 .navbar-other .brand {
   color: var(--textcolor) !important;
 }
 .resume-link{
   color: var(--textcolor) !important;
+}
+
+.resume-link:hover{
+  color:var(--anshorange) !important;
 }
 .navbar-nav .nav-link{
   color: var(--textcolor);
@@ -42,10 +49,9 @@
   color: var(--anshorange);
 }
 
+@media (max-width:600px){
 
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-} 
+}
 
 /* Fixed top navbar styles */
 .fixed-top {
@@ -57,6 +63,15 @@
 /* Hover effect for Ansh Pathapadu on non-homepage */
 .navbar-other .brand:hover .brand-text {
   color: var(--anshorange); 
+}
+/* Toggle button color for the home page */
+.navbar-home .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Toggle button color for other pages */
+.navbar-other .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 /* Transparent background */
 /* .bg-transparent {
