@@ -49,7 +49,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link 
-                href="/Ansh_Film_ResumeNEW.pdf" 
+                href="/AnshFilmResume.pdf" 
                 target="_blank" 
                 onClick={() => updateExpanded(false)}
                 className="resume-link"

@@ -42,10 +42,10 @@
 }
 
 /* Active link and hover effect for all nav-links */
-.navbar-nav .active > .nav-link:not([href="/Ansh_Film_ResumeNEW.pdf"]),
-.navbar-nav .nav-link.active:not([href="/Ansh_Film_ResumeNEW.pdf"]),
-.navbar-nav .nav-link.show:not([href="/Ansh_Film_ResumeNEW.pdf"]),
-.navbar-nav .show > .nav-link:not([href="/Ansh_Film_ResumeNEW.pdf"]) {
+.navbar-nav .active > .nav-link:not([href="/AnshFilmResume.pdf"]),
+.navbar-nav .nav-link.active:not([href="/AnshFilmResume.pdf"]),
+.navbar-nav .nav-link.show:not([href="/AnshFilmResume.pdf"]),
+.navbar-nav .show > .nav-link:not([href="/AnshFilmResume.pdf"]) {
   color: var(--anshorange);
 }
 /* Fixed top navbar styles */
