@@ -3,8 +3,31 @@ import luck from "../../Images/Projects/Luck.jpg"
 import wheresfrank from "../../Images/Projects/Where_sFrank.jpg"
 import deadoralive from "../../Images/Projects/DeadorAlive.jpg"
 import robbedblind from "../../Images/Projects/RobbedBlind.jpg"
+import aurora from "../../Images/Projects/aurora.png"
+import ftlt from "../../Images/Projects/ftlt.png"
 import trendy from "../../Images/Projects/Trendy.jpg"
+
 const movieData = [
+    {
+      fileName: 'aurora',
+      title: 'Aurora',
+      img: aurora,
+      description: 'When the spokesperson for a groundbreaking memory-erasing technology starts experiencing haunting flashbacks of a life she doesn’t remember, she must unravel the truth behind her erased past before a shadowy organization wipes her memories — and identity — for good.',
+      link: "https://youtu.be/8PeLhc4Bk8I",
+      director: 'Ansh Pathapadu & Jae Lee',
+      releaseDate: '2024'
+
+    },
+    {
+      fileName: 'forthelasttime',
+      title: 'For The Last Time',
+      img: ftlt,
+      description: 'A hotel concierge has an interesting conversation with a guest during his 3 AM shift. ',
+      link: "https://www.youtube.com/watch?v=_9qeMHMfyEU",
+      director: 'Ansh Pathapadu',
+      releaseDate: '2024'
+
+    },
     {
       fileName: 'iseeyou',
       title: 'I See You',
