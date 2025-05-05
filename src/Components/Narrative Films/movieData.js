@@ -6,13 +6,43 @@ import robbedblind from "../../Images/Projects/RobbedBlind.jpg"
 import aurora from "../../Images/Projects/aurora.png"
 import ftlt from "../../Images/Projects/ftlt.png"
 import trendy from "../../Images/Projects/Trendy.jpg"
+import teatime from "../../Images/Projects/TeaTime.png"
+import underthemag from "../../Images/Projects/Underthemag ss.png"
+import nocry from "../../Images/Projects/nocry.png"
 
 const movieData = [
+    {
+      fileName: 'nocry',
+      title: 'No-Cry Sleep Solution',
+      img: nocry,
+      description: 'After experiencing a vivid dream depicting the perfect family life, recently divorced David Dalton attempts to recreate it through lucid dreaming',
+      link: "https://youtu.be/oPLuS04Lvro",
+      director: 'Ansh Pathapadu',
+      releaseDate: '2025'
+    },
+    {
+      fileName: 'teatime',
+      title: 'Tea Time',
+      img: teatime,
+      description: '4 adults have tea and talk about their childhood memories',
+      link: "https://www.youtube.com/watch?v=9EXDBdRF6T8",
+      director: 'Ansh Pathapadu',
+      releaseDate: '2025'
+    },
+    {
+      fileName: 'underthemag',
+      title: 'Under The Magnolia Tree',
+      img: underthemag,
+      description: 'During a tense interview with a young journalist, a school bus driver is forced to face the consequences of a tragic accident.',
+      link: "https://www.youtube.com/watch?v=TlrROLsTQMs",
+      director: 'Ansh Pathapadu',
+      releaseDate: '2024'
+    },
     {
       fileName: 'aurora',
       title: 'Aurora',
       img: aurora,
-      description: 'When the spokesperson for a groundbreaking memory-erasing technology starts experiencing haunting flashbacks of a life she doesn’t remember, she must unravel the truth behind her erased past before a shadowy organization wipes her memories — and identity — for good.',
+      description: 'When the pokesperson for a groundbreaking trauma-erasing technology starts experiencing haunting flashbacks of a life she doesn’t remember, she must unravel the truth behind her erased past before a shadowy organization wipes her memories — and identity — for good.',
       link: "https://youtu.be/8PeLhc4Bk8I",
       director: 'Ansh Pathapadu & Jae Lee',
       releaseDate: '2024'
@@ -33,7 +63,7 @@ const movieData = [
       title: 'I See You',
       img: iseeyou,
       description: 'Andy, a young man facing the gradual loss of his vision, navigates his daily routine with the unexpected return of his estranged sister, Anna.',
-      link: "https://youtu.be/SYOULxypMoA",
+      link: "https://youtu.be/pu7-ptA0AIA",
       director: 'Ansh Pathapadu',
       releaseDate: '2024'
     },

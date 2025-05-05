@@ -34,8 +34,8 @@ function App() {
           <MovieDataProvider>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/narrativefilms" element={<Narrative />} />
-              <Route path="/narrativefilms/:filmName" element={<NarrativeFilmDetail />} />
+              <Route path="/films" element={<Narrative />} />
+              <Route path="/films/:filmName" element={<NarrativeFilmDetail />} />
               <Route path="/experimentalfilms" element={<Experimental />} />
               <Route path="/about" element={<About />} />
               <Route path="*" element={<Navigate to="/" />} />

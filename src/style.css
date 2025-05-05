@@ -108,6 +108,18 @@ p {
   border: none !important;
 }
 
+.btn-secondary:hover {
+  color: var(--anshorange)!important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.btn-secondary {
+  color: #fff !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;

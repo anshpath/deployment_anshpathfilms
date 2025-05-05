@@ -33,13 +33,8 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Item>
-              <Nav.Link as={NavLink} to="/narrativefilms" onClick={() => updateExpanded(false)}>
-                Narrative
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link as={NavLink} to="/experimentalfilms" onClick={() => updateExpanded(false)}>
-                Experimental
+              <Nav.Link as={NavLink} to="/films" onClick={() => updateExpanded(false)}>
+                Films
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -49,7 +44,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link 
-                href="/AnshFilmResume.pdf" 
+                href="/np" 
                 target="_blank" 
                 onClick={() => updateExpanded(false)}
                 className="resume-link"
